@@ -1,5 +1,6 @@
 
-
+var num1inp = document.getElementById("num1inp");
+var num2inp = document.getElementById("num2inp");
 
 var selector =document.getElementById("Selector");
 var calculate =document.getElementById("calculate");
@@ -10,42 +11,41 @@ var display= document.getElementById("display");
 calculate.addEventListener("click", function(){
     
 
-    var input1 = +a.value;
-    var input2 = +b.value;
+    var num1 = + num1inp.value;
+    var num2 = + num2inp.value;
     
-    if(selector.value === "Addition"){
-        
-        var answer = input1 + input2    ;
+    if(selector.value === "Addition"){    
+        var answer = num1 + num2    ;
         
         display.innerHTML = answer;
     }
     else if( selector.value === "Division"){
         
-        var answe = a / input2;
+        var answe = a / num2;
         
         display.innerHTML = answe;
     }
     else if (selector.value === "Multiplication"){
         
-        var answ = a * b;
+        var answ =num1 * num2;
         
         display.innerHTML = answ;
     }
     else if (selector.value === "Squared"){
         
-        var ans = Math.pow(a ,b);
+        var ans = Math.pow(num1 ,num2);
         
         display.innerHTML = ans;
     }
     else if (selector.value ==="Subtraction" ) {
         
-        var an = a - b;
+        var an = num1 - num2;
         
         display.innerHTML = an;
     }
     else if (selector.value === "Nth power"){
         
-        var a = Math.pow(input1 , 1/input2);
+        var a = Math.pow(num1 , 1/num2);
         
         display.innerHTML = a;
     }
