@@ -66,7 +66,8 @@ function component(width, height, color, x, y, type) {
         return crash;
     }
 }
-
+// this funtion below is sort of like an event listener. Basically when, or IF, the cube hits one of the obstacels, the game arena will stop since it is a sign that the user
+//has lost. Hence stopping the piece as well.
 function updateGameArea() {
     var x, height, gap, minHeight, maxHeight, minGap, maxGap;
     for (i = 0; i < myObstacles.length; i += 1) {
@@ -104,7 +105,8 @@ function everyinterval(n) {
     if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
     return false;
 }
-
+//the code below displays the function and speed of the cube. For starters, in the code below that says "mygamepiece.speedY/X" is meant to assign a the speed of the cube.
+//10 is to fast and 1 was too slow so 3 is a fair speed for the user.
 document.addEventListener("keydown", moveup);
 
 function moveup(e) {
@@ -113,7 +115,7 @@ function moveup(e) {
     
     myGamePiece.speedY = -3;
     }
-
+//Now the event listener here waits for the down arrow key to be pressed and when it is pressed, the fucntion assigned to the even is to move the cube down.
 
 document.addEventListener("keydown", movedown);
 
