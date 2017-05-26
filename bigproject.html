@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta> 
+
+<title>Game</title>
+
+<link rel="stylesheet" href="navbar.css" type="text/css" />
+
+<style>
+    .black-border {
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+        padding: 2px;
+        }
+        
+    .white-background {
+        background-color: white;
+        }
+    
+    .padding {
+        padding: 10px;
+    }
+    
+    .inline {
+        display: inline-block;
+    }
+    
+    .color {
+            background-color: #607D8B;
+        }
+    .width{
+        width: 35%;
+    }
+
+canvas{
+    border:1px solid #d3d3d3;
+    
+    position:absolute;
+    top: 100px;
+}
+</style>
+</head>
+
+<body onload="startGame()" style="background:#212F3C">
+
+<ul id="navbar" style="text-align:center">
+                <li><a href="home.html"><strong>Home</strong></a></li>
+                <li><a href="index.html"><strong>About Me</strong> </a></li>
+                <li><a href="hardware.html"><strong>Hardware</strong></a></li>
+                <li><a href="howtopage.html"><strong>How To</strong></a></li>
+                <li><a href="calc.html"><strong>Calculator</strong></a></li>
+                <li><a href="todo.html"><strong>Todo List</strong></a></li>
+                <li><a href="vind.html"><strong>Vindinium</strong></a></li>
+                <li><a href="bigproject.html"><strong>Game</strong></a></li>
+</ul>
+
+<FORM style="position:absolute top:400px"><INPUT TYPE="button" onClick="history.go(0)" VALUE="Restart"></FORM>
+
+<script src="bigproject.js"></script>
+
+</body>
+</html>
